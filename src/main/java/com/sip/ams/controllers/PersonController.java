@@ -32,7 +32,7 @@ public class PersonController {
  
         model.addAttribute("message", message);
  
-        return "person/index";
+        return "/person/index";
     }
  
     @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
@@ -40,7 +40,7 @@ public class PersonController {
  
         model.addAttribute("persons", persons);
  
-        return "person/personList";
+        return "/person/personList";
     }
  
     @RequestMapping(value = { "/addPerson" }, method = RequestMethod.GET)
@@ -49,7 +49,7 @@ public class PersonController {
         PersonForm personForm = new PersonForm();
         model.addAttribute("personForm", personForm);
  
-        return "person/addPerson";
+        return "/person/addPerson";
     }
  
     @RequestMapping(value = { "/addPerson" }, method = RequestMethod.POST)
@@ -68,7 +68,7 @@ public class PersonController {
         }
  
         model.addAttribute("errorMessage", errorMessage);
-        return "person/addPerson";
+        return "/person/addPerson";
     }
     
     @RequestMapping(value = { "/deletePerson" }, method = RequestMethod.DELETE)
@@ -80,7 +80,7 @@ public class PersonController {
     	        
     	//model.addAttribute("personForm", personFormRepository.findAll());
         //model.addAttribute("users", userRepository.findAll());
-        return "index";
+        return "/index";
     }
  
 }

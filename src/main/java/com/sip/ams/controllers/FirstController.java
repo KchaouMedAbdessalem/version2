@@ -18,7 +18,7 @@ public class FirstController{
 	public String home ()
 	{
 		//return " <h1> Hello Spring Boot </h1>";
-		return "first/home";
+		return "/first/home";
 	}
 
 	@GetMapping("/acceuil")
@@ -56,7 +56,7 @@ public class FirstController{
 		animals.add(new animal ("Oiseau",2));
 		monObj.put("animals", animals);
 		
-		return "first/acceuil";
+		return "/first/acceuil";
 	}
 
 }
