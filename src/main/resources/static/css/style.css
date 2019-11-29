@@ -1,0 +1,15 @@
+h1 {
+	color:red;
+}
+
+h2 {
+	color:green;
+}
+
+table {
+	bordor-collspace: collspace;
+}
+
+table th, table td {
+	padding: 5px;
+}

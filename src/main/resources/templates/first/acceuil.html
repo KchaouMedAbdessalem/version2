@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="https://theamleaf.org/">
+<head>
+<title>Spring Boot MVC Acceuil </title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h2 align="center"> La vue Acceuil </h2>
+<h1 align="center"> La vue Acceuil</h1>
+<ul>
+<li th:text="${ec}"> </li>
+<li th:text="${forma}"></li>
+
+<li th:text="${msg}">... </li>
+<li th:text="${msg2}">... </li>
+<li th:text="${nbr}">... </li>
+
+</ul>
+
+	<ul th:each ="name : ${names}">
+	<li th:text=${name}> ... </li> 
+	
+	</ul>
+	
+	<ul th:each ="animal : ${animals}">
+	<li>
+	<p>
+	<span th:text="${animal.nom}"> </span> 
+	<span th:text="${animal.age}"> </span>
+	</p>
+	</li> 
+	
+	</ul>
+</body>
+</html>
